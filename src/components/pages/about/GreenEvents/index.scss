@@ -1,0 +1,136 @@
+.green-events {
+  max-width: 1560px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px;
+  background: #ffffff;
+  border-radius: 28px;
+  .text16 {
+    max-width: 620px;
+    width: 100%;
+  }
+
+  .title2 {
+    margin-right: 40px;
+  }
+
+  .headline svg {
+    width: 112%;
+    height: 102%;
+    position: absolute;
+    top: -3px;
+    left: -24px;
+
+    @media (max-width: 1024px) {
+      width: 109%;
+      height: 100%;
+      position: absolute;
+      top: -4px;
+      left: -19px;
+    }
+    @media (max-width: 900px) {
+      width: 110%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -14px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__block {
+    padding: 16px;
+    background: #f5f5f5;
+    border-radius: 24px;
+    position: relative;
+  }
+
+  &__main-img,
+  &__chart,
+  &__history,
+  &__reduct {
+    display: flex;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__chart,
+  &__history,
+  &__reduct {
+    position: absolute;
+  }
+
+  &__main-img {
+    width: 47.3%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  &__chart {
+    width: 59.1%;
+    right: 16px;
+    top: 8%;
+  }
+  &__history {
+    width: 26.2%;
+    right: 4.61%;
+    bottom: 12.7%;
+  }
+
+  &__reduct {
+    width: 34.27%;
+    bottom: 9.15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 1280px) {
+    padding: 48px;
+  }
+  @media (max-width: 1024px) {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 24px 16px;
+    .title2 {
+      margin-bottom: 16px;
+      margin-right: 0;
+    }
+
+    &__top {
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+
+    &__main-img {
+      border-radius: 12px;
+    }
+
+    &__block {
+      border-radius: 16px;
+    }
+
+    &__chart {
+      width: 53.23%;
+      top: 12%;
+    }
+    &__history {
+      width: 23.6%;
+      bottom: 18%;
+    }
+
+    &__reduct {
+      width: 31.5%;
+      bottom: 14%;
+    }
+  }
+}

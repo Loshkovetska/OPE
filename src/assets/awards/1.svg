@@ -1,0 +1,14 @@
+<svg
+  width="311"
+  height="232"
+  viewBox="0 0 311 232"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M311 16C311 7.16344 303.837 0 295 0H16C7.16344 0 0 7.16344 0 16V168C0 176.837 7.16345 184 16 184H104C112.837 184 120 191.163 120 200V216C120 224.837 127.163 232 136 232H295C303.837 232 311 224.837 311 216V16Z"
+    fill="#EEEEEE"
+  />
+</svg>

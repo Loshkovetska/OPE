@@ -1,0 +1,287 @@
+.case-content {
+  padding: 80px 120px;
+  max-width: 1560px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 28px;
+  background: #fff;
+
+  .event-quote {
+    padding: 100px 0 144px;
+    margin-bottom: 64px;
+    &__cont {
+      padding: 40px 32px 32px 48px;
+    }
+
+    &__container {
+      position: relative;
+    }
+
+    &__img {
+      padding-bottom: 0;
+    }
+  }
+
+  &__container {
+    width: 100%;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 64px;
+  }
+
+  &__left {
+    flex-grow: 1;
+    margin-right: 161px;
+
+    p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    strong {
+      font-weight: 500;
+    }
+  }
+  &__right {
+    &-title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 32px;
+      color: #101010;
+      margin-bottom: 16px;
+    }
+    &-list {
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    img {
+      border-radius: 24px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      max-width: 780px;
+      width: 100%;
+      margin: 0 auto 32px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.01em;
+      opacity: 0.8;
+      max-width: 780px;
+      width: 100%;
+      margin: 24px auto 16px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: rgba(16, 16, 16, 0.8);
+      max-width: 780px;
+      width: 100%;
+      margin: 0 auto;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    table {
+      margin: 64px 0;
+      height: auto !important;
+
+      img {
+        height: 100%;
+      }
+
+      &:last-child {
+        margin: 64px 0 0;
+      }
+    }
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+    }
+    td {
+      display: flex;
+      width: 100% !important;
+      height: 100% !important;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+    tr {
+      display: flex;
+      width: 100% !important;
+      height: auto !important;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    padding: 80px 48px;
+
+    &__left {
+      margin-right: 48px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 24px 16px;
+  }
+
+  @media (max-width: 900px) {
+    &__top {
+      flex-direction: column;
+      margin-bottom: 48px;
+    }
+    &__left {
+      margin-right: 0;
+      margin-bottom: 24px;
+      p {
+        font-size: 16px;
+        line-height: 28px;
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &__right {
+      &-title {
+        margin-bottom: 12px;
+      }
+    }
+    .event-quote {
+      padding: 24px 16px 70px;
+      margin-bottom: 48px;
+
+      &__cont {
+        padding: 24px 16px 16px 24px;
+      }
+    }
+    &__content {
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+        line-height: 140%;
+      }
+
+      table {
+        margin: 48px 0;
+        &:last-child {
+          margin: 48px 0 0;
+        }
+      }
+
+      tr {
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+
+      td {
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+
+      img {
+        border-radius: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      table {
+        img {
+          height: 70vw;
+        }
+      }
+      tr {
+        flex-direction: column;
+      }
+
+      td {
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .event-quote {
+      background: none !important;
+      padding: 0;
+      margin-bottom: 100px;
+
+      &__container {
+        max-width: none;
+      }
+
+      &__cont {
+        padding: 24px 16px 16px 24px;
+      }
+
+      .text16 {
+        max-width: 100%;
+      }
+
+      .title3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &__bg {
+        background: #1b4638;
+        &.top {
+          &::after {
+            box-shadow: 12px -13px 0 11px #1b4638;
+          }
+        }
+      }
+
+      .title3,
+      .text16 {
+        color: #fff;
+      }
+    }
+  }
+}

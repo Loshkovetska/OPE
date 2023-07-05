@@ -1,0 +1,14 @@
+.process__line {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .process__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

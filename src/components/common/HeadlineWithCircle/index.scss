@@ -1,0 +1,49 @@
+.headline {
+  display: inline-block;
+  span {
+    display: inline;
+    position: relative;
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 103%;
+    //   height: 98%;
+    //   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 285 75' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M81.0965 7.03189C99.6199 1.88545 160.454 -2.60941 234.374 10.289C301.09 21.9301 283.798 47.4224 273.172 54.075C248.047 69.8054 186.628 75.3428 92.3617 72.0461C69.7219 71.2543 20.7378 66.5829 5.91911 54.2315C-12.6043 38.7921 41.4223 6.72582 167.999 12.664' stroke='%23F7BC00' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    //   top: 0;
+    //   left: -14px;
+    //   background-repeat: no-repeat;
+    //   background-size: 100% 100%;
+    // }
+    // svg {
+    //   width: 103%;
+    //   height: 98%;
+    //   position: absolute;
+    //   top: 0;
+    //   left: -14px;
+    // }
+    img {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 107%;
+      height: 79%;
+      left: -16px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    span {
+      &::after {
+        left: -10px;
+      }
+      svg {
+        left: -10px;
+      }
+
+      img {
+        left: -9px;
+      }
+    }
+  }
+}

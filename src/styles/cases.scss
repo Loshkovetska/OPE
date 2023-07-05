@@ -1,0 +1,7 @@
+@import "../components/pages/cases/CasesList/index.scss";
+
+.cases-width {
+  & + .focus-block {
+    max-width: none;
+  }
+}

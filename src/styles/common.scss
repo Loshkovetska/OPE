@@ -1,0 +1,215 @@
+@import "../components/common/Button/index.scss";
+@import "../components/common/ButtonWithIcon/index.scss";
+@import "../components/common/Header/index.scss";
+@import "../components/common/Navigation/index.scss";
+@import "../components/common/H1/index.scss";
+@import "../components/common/H2/index.scss";
+@import "../components/common/Menu/index.scss";
+@import "../components/common/ContactPop/index.scss";
+@import "../components/common/ContactButton/index.scss";
+@import "../components/common/Text18/index.scss";
+@import "../components/common/Text16/index.scss";
+@import "../components/common/MaskedImage/index.scss";
+@import "../components/common/FocusBlock/index.scss";
+@import "../components/common/Puzzle/index.scss";
+@import "../components/common/ReviewItem/index.scss";
+@import "../components/common/ReviewsList/index.scss";
+@import "../components/common/BlogCard/index.scss";
+@import "../components/common/Input/index.scss";
+@import "../components/common/FaqItem/index.scss";
+@import "../components/common/Title56/index.scss";
+@import "../components/common/Footer/index.scss";
+@import "../components/common/FooterCol/index.scss";
+@import "../components/common/Tabs/index.scss";
+@import "../components/common/PhoneInput/index.scss";
+@import "@/components/common/ServiceItem/index.scss";
+@import "@/components/common/GeneralIntro/index.scss";
+@import "@/components/common/H3/index.scss";
+@import "@/components/common/SecondIntro/index.scss";
+@import "@/components/common/Select/index.scss";
+@import "@/components/common/CaseItem/index.scss";
+@import "@/components/common/Radio/index.scss";
+@import "@/components/common/Pagination/index.scss";
+@import "@/components/common/SelectBottomSheet/index.scss";
+@import "@/components/common/HeadlineWithCircle/index.scss";
+@import "../components/common/DestinationCard/index.scss";
+@import "../components/common/ListSmallIcon/index.scss";
+@import "../components/common/AnimationArrow/index.scss";
+@import "../components/common/CookiePop/index.scss";
+@import "../components/common/ThanksPop/index.scss";
+
+.slick-list,
+.slick-track,
+.slick-slider,
+.slick-dots {
+  display: flex !important;
+}
+
+.slick-slider {
+  flex-direction: column;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots {
+  margin-top: 32px;
+  justify-content: center;
+  ul,
+  li {
+    list-style: none;
+  }
+  li {
+    button {
+      background: #ffffff;
+      opacity: 0.5;
+      width: 8px;
+      height: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 200px;
+      cursor: pointer;
+      font-size: 0;
+
+      transition: 1s cubic-bezier(0.22, 1, 0.36, 1);
+      @media (max-width: 480px) {
+        width: 4px;
+        height: 4px;
+      }
+    }
+    &.slick-active {
+      button {
+        opacity: 1;
+        width: 40px;
+
+        @media (max-width: 480px) {
+          opacity: 1;
+          width: 40px;
+        }
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+#__next {
+  //overflow: hidden;
+}
+
+html {
+  background: #fafafa;
+
+  &.touch-device {
+    #__next {
+      overflow: initial;
+    }
+    .smooth {
+      overflow: auto;
+      overflow-x: hidden;
+      position: relative;
+      scroll-behavior: smooth;
+    }
+  }
+
+  // @media (max-width: 480px) {
+  //   background: #ffffff;
+  // }
+}
+
+html,
+body,
+#__next {
+  &.hidden-menu {
+    overflow: hidden;
+    isolation: isolate;
+  }
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+.smooth {
+  -webkit-transform: translate3d(0, 0, 0);
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  padding: 24px 24px 68px;
+
+  @media (max-width: 1024px) {
+    padding: 8px 8px 68px;
+  }
+}
+
+.c-scrollbar {
+  @media (max-width: 900px) {
+    display: none !important;
+  }
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  resize: none;
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-background-clip: text;
+  }
+  &:-webkit-autofill {
+    -webkit-text-fill-color: #101010 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  input,
+  textarea {
+    &:focus,
+    &:hover {
+      font-size: 16px !important;
+    }
+  }
+}
+
+.space {
+  margin-top: 24px;
+  &.big {
+    margin-top: 40px;
+    &.hidden {
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.gen-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (max-width: 480px) {
+    flex-direction: column-reverse;
+
+    .logotypes {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+}

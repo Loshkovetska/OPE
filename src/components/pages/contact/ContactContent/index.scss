@@ -1,0 +1,139 @@
+.contact-content {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  column-gap: 24px;
+
+  &__block {
+    padding: 48px;
+    background: #f5f5f5;
+    border-radius: 32px;
+
+    &:first-child {
+      .button {
+        margin-top: 40px;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    &-top {
+      flex-grow: 1;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    &-line {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 16px;
+      column-gap: 16px;
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    padding: 32px 26px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain !important;
+    }
+  }
+
+  .title2 {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 1280px) {
+    &__block {
+      padding: 32px;
+      border-radius: 24px;
+    }
+
+    &__item {
+      height: 78px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    column-gap: 16px;
+    &__block {
+      padding: 24px;
+    }
+
+    &__item {
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+    &__block {
+      &:first-child {
+        padding: 24px 16px;
+        .button {
+          margin-top: 24px;
+        }
+      }
+      &:last-child {
+        padding: 24px;
+      }
+    }
+
+    &__item {
+      padding: 54px 39px;
+      border-radius: 12px;
+      height: 88px;
+    }
+
+    .title2 {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__block {
+      overflow: hidden;
+    }
+    &__list {
+      display: flex;
+
+      &-line {
+        animation: 35s linear translateMob infinite;
+        display: flex;
+        column-gap: 0;
+        width: auto;
+        &:last-child {
+          display: flex;
+        }
+      }
+    }
+    &__item {
+      min-width: 185px;
+      max-width: 185px;
+      padding: 24px 16px;
+      margin-right: 16px;
+    }
+
+    @keyframes translateMob {
+      100% {
+        transform: translate(-100%, 0);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<svg
+  data-version="clipboard"
+  use-custom-elements=""
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0"
+  y="0"
+  height="100%"
+  width="100%"
+  style="position: absolute; left: 0; top:0; right: 0; bottom:0;"
+  id="IDI_289rlb6"
+  class="showed"
+  data-unit-key="MILLIMETER"
+  data-drawing-scale="1"
+><defs>
+    </defs><path
+    d="M 267 67 C 251.536 67 239 79.536 239 95 L 239 114 C 239 127.255 228.255 138 215 138 L 60 138 C 48.9543 138 40 146.954 40 158 C 40 169.046 48.9543 178 60 178 L 1350 178 C 1361.05 178 1370 169.046 1370 158 C 1370 146.954 1361.05 138 1350 138 L 1177 138 C 1163.75 138 1153 127.255 1153 114 L 1153 95 C 1153 79.536 1140.46 67 1125 67 L 267 67 Z"
+    fill-rule="evenodd"
+    fill="red"
+    transform="matrix(1 0 0 1 -0.296244 -0.306749)"
+    class=""
+  /></svg>

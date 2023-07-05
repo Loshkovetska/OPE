@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"../../node_modules/next/dist/client/index.js -> ../pages/_app":{id:1249,files:["static/chunks/66.b3a32b69d2d6a28c.js"]},"../../node_modules/next/dist/client/index.js -> ../pages/_error":{id:6698,files:["static/chunks/698.16ba223dac9a3b3e.js"]},"../hooks/useLoco.tsx -> locomotive-scroll":{id:6267,files:["static/chunks/267.6e3262d5dae8f158.js"]}};

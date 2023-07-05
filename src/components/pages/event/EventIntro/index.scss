@@ -1,0 +1,146 @@
+.event-intro {
+  --main-color: #fff;
+  width: 100%;
+  height: calc(100vh - 48px);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 28px;
+  background: var(--main-color);
+  padding: 152px 80px 0;
+  max-height: 1670px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &__top {
+    max-width: 687px;
+    width: 100%;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    border-radius: 24px 24px 0px 0px;
+    background: #fff;
+    padding: 24px 24px 0;
+    margin-bottom: -16px;
+    overflow: hidden;
+    display: flex;
+    img,
+    video {
+      width: 100%;
+      height: 100%;
+      border-radius: 24px 24px 0 0;
+      object-fit: cover;
+    }
+  }
+
+  .title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+  }
+
+  .title,
+  .text16 {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text16 {
+    margin-bottom: 40px;
+    max-width: 586px;
+    width: 100%;
+  }
+  &.about-page {
+    .text16 {
+      max-width: 570px;
+    }
+  }
+
+  .button {
+    padding: 20px 48px;
+  }
+
+  @media (max-width: 1024px) {
+    height: calc(90vh - 48px);
+    max-height: 600px;
+    border-radius: 24px;
+    padding: 90px 24px 0;
+
+    &__container {
+      margin-top: 0;
+    }
+
+    &__image {
+      border-radius: 16px 16px 0px 0px;
+      padding: 16px 16px 0;
+      margin-bottom: -16px;
+
+      img,
+      video {
+        border-radius: 16px 16px 0px 0px;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    padding: 95px 24px 0;
+
+    .button {
+      background: #ffffff;
+      color: #101010;
+    }
+
+    .title {
+      font-size: 38px;
+      line-height: 41px;
+    }
+
+    .text16 {
+      margin-bottom: 24px;
+    }
+
+    &__top {
+      max-width: 560px;
+      margin: 0 auto 24px;
+    }
+
+    &__image {
+      border-radius: 20px 20px 0px 0px;
+      padding: 8px 8px 0;
+      margin-bottom: 0;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: auto;
+    max-height: none;
+
+    .button {
+      width: 100%;
+    }
+    .title,
+    .text16 {
+      text-align: left;
+    }
+
+    &__top {
+      margin: 0 0 32px;
+      align-items: flex-start;
+    }
+  }
+}

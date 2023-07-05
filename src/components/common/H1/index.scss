@@ -1,0 +1,22 @@
+.title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 93px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  @media (max-width: 900px) {
+    font-size: 40px;
+    line-height: 61px;
+  }
+
+  &.white {
+    color: #fff;
+  }
+
+  &.black {
+    color: #101010;
+  }
+}

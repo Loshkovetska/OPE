@@ -1,0 +1,9 @@
+.related-cases.cases {
+
+  .case-item .blog-card__pop{
+    background: #fafafa;
+  }
+  @media (max-width: 900px) {
+    padding: 0 8px 0;
+  }
+}

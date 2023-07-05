@@ -1,0 +1,233 @@
+.header {
+  position: fixed;
+  top: 48px;
+  left: 48px;
+  right: 48px;
+  width: calc(100vw - 96px);
+  padding: 8px 8px 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 8px 8px 8px 16px;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 4;
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+
+  &__hamburger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    max-width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 50%;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      max-width: 28px;
+      transform: translate(-50%, -50%);
+      filter: invert(100%) sepia(4%) saturate(7472%) hue-rotate(21deg)
+        brightness(127%) contrast(114%);
+      &.hidden {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__left {
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    z-index: 1;
+  }
+  &__logo {
+    max-width: 141px;
+    width: 100%;
+    height: 33px;
+    filter: invert(100%) sepia(4%) saturate(7472%) hue-rotate(21deg)
+      brightness(127%) contrast(114%);
+    cursor: pointer;
+  }
+
+  &__func {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    &-locale {
+      min-width: 48px;
+      max-width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      cursor: pointer;
+
+      img {
+        width: 32px;
+        height: 32px;
+        filter: invert(100%) sepia(4%) saturate(7472%) hue-rotate(21deg)
+          brightness(127%) contrast(114%);
+        //transition: 0.3s ease-in-out all;
+      }
+    }
+  }
+
+  &.white {
+    border-radius: 16px 16px 0 0;
+    background: #ffffff;
+  }
+
+  &.fixed {
+    background: #ffffff;
+  }
+
+  &.white,
+  &.fixed {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+    .header__logo {
+      filter: none;
+    }
+
+    .header__func-locale {
+      img {
+        filter: none;
+      }
+    }
+
+    .header__hamburger {
+      backdrop-filter: none;
+      img {
+        filter: none;
+      }
+    }
+
+    .navigation__link {
+      color: #101010;
+
+      span {
+        img {
+          filter: none;
+        }
+      }
+
+      span {
+        &::after {
+          background: #101010;
+        }
+      }
+    }
+
+    .button {
+      background: #f7bc00;
+      color: #ffffff;
+
+      .button__anim {
+        path {
+          fill: #101010;
+        }
+      }
+    }
+  }
+
+  &.fixed {
+    transform: translate(0px, -28px);
+
+    @media (max-width: 1024px) {
+      transform: translate(0px, 0);
+    }
+    &.hidden {
+      transform: translateY(calc(-100% - 48px));
+
+      @media (max-width: 1024px) {
+        transform: translateY(calc(-100% - 8px));
+      }
+      .navigation__link.sublist {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        &.visible {
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  &.menu-open {
+    border-color: transparent;
+    .header__logo {
+      filter: none;
+    }
+    .header__hamburger {
+      border-color: transparent;
+      backdrop-filter: none;
+      img {
+        filter: none;
+      }
+    }
+    &.fixed {
+      background: transparent;
+      box-shadow: none;
+      .header__logo {
+        filter: none;
+      }
+      .header__hamburger {
+        border-color: transparent;
+        backdrop-filter: none;
+
+        img {
+          filter: none;
+        }
+      }
+    }
+    &.hidden {
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 1280px) {
+    &__left {
+      max-width: none;
+      width: fit-content;
+      margin-right: 24px;
+    }
+    &__func {
+      margin-left: 24px;
+    }
+  }
+  @media (max-width: 1024px) {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    width: calc(100vw - 24px);
+    padding: 8px;
+    border: none;
+    background: none;
+    backdrop-filter: none;
+    &__func {
+      display: none;
+    }
+    &__hamburger {
+      display: flex;
+    }
+
+    &__logo {
+      max-width: 134px;
+      height: 31px;
+    }
+  }
+}

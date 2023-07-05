@@ -1,0 +1,60 @@
+.inspire-card {
+  padding: 16px;
+  min-width: 360px;
+  max-width: 360px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  text-decoration: none;
+  user-select: none;
+
+  &.disabled,
+  &.no-link {
+    pointer-events: none;
+  }
+  &__image {
+    display: flex;
+    width: 100%;
+    height: 21.806vw;
+    overflow: hidden;
+    border-radius: 16px;
+    max-height: 314px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    margin-bottom: 16px;
+  }
+
+  .title3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 16px;
+    &.center {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+  }
+
+  .text16 {
+    letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 900px) {
+    min-width: 300px;
+    max-width: 300px;
+    &__image {
+      height: 58.67vw;
+      max-height: 255px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    min-width: calc(100vw - 43px);
+    max-width: calc(100vw - 43px);
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+  }
+}

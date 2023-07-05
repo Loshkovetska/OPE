@@ -1,0 +1,19 @@
+.title56 {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  &.black {
+    color: #101010;
+  }
+  &.white {
+    color: #fff;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

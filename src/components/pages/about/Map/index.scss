@@ -1,0 +1,65 @@
+.map {
+  max-width: 1560px;
+  width: 100%;
+  margin: 0 auto;
+  background: #101010;
+  /* Block shadow */
+
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+
+  display: flex;
+  align-items: center;
+  padding: 84px 42px 84px 80px;
+
+  .title2 {
+    max-width: 457px;
+    width: 100%;
+    margin-right: 61px;
+  }
+
+  &__image {
+    width: 165.2%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    padding: 64px 32px 64px 48px;
+
+    &__image {
+      width: 146%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 48px 16px 48px 24px;
+
+    .title2 {
+      margin-right: 32px;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .title2 {
+      max-width: 300px;
+    }
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 24px;
+    .title2 {
+      max-width: none;
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+}
