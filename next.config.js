@@ -17,14 +17,4 @@ module.exports = {
 
     return config;
   },
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: "https",
-  //       hostname: "onpurpose.romura.space",
-  //       port: "",
-  //       pathname: "/wp-content/uploads/**",
-  //     },
-  //   ],
-  // },
 };
